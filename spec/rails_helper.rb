@@ -2,13 +2,14 @@
 
 ENV['RAILS_ENV'] ||= 'test'
 
+require 'simplecov'
+SimpleCov.start 'rails'
+
 require File.expand_path('../config/environment', __dir__)
 require 'spec_helper'
-require 'simplecov'
 require 'rspec/rails'
 
 abort('The Rails environment is running in production mode!') if Rails.env.production?
-SimpleCov.start 'rails'
 Dir[Rails.root.join('spec', 'support', '**', '*.rb')].each { |f| require f }
 ActiveRecord::Migration.maintain_test_schema!
 
