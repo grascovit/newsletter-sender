@@ -1,0 +1,4 @@
+language: ruby
+cache: bundler
+before_script:
+- bundle exec rake db:setup

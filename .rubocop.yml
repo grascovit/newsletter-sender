@@ -1,0 +1,23 @@
+require: rubocop-rspec
+
+Rails:
+  Enabled: true
+
+AllCops:
+  TargetRubyVersion: 2.5.1
+  Exclude:
+  - db/**/*
+
+Style/Documentation:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Max: 10
+
+Metrics/BlockLength:
+  Exclude:
+  - spec/**/*
+
+Metrics/ModuleLength:
+  Exclude:
+  - spec/**/*
