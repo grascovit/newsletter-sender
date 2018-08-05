@@ -1,41 +1,68 @@
-<h2><%= t('.header') %></h2>
+<div class="row">
+  <div class="col-11 col-md-5 mx-auto">
+    <h4 class="my-4 text-center">
+      <%= t('.header') %>
+    </h4>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= devise_error_messages! %>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+      <%= render 'shared/error_messages', object: resource %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+      <div class="form-group">
+        <%= f.text_field :name,
+                         autocomplete: 'on',
+                         placeholder: t('activerecord.attributes.user.name'),
+                         class: 'form-control' %>
+      </div>
 
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div><%= t('.waiting_confirmation') %> <%= resource.unconfirmed_email %></div>
-  <% end %>
+      <div class="form-group">
+        <%= f.email_field :email,
+                          autocomplete: 'on',
+                          placeholder: t('activerecord.attributes.user.email'),
+                          class: 'form-control' %>
+      </div>
 
-  <div class="field">
-    <%= f.label :password %> <i><%= t('.optional_password') %></i><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-    <% if @minimum_password_length %>
-      <br />
-      <em><%= @minimum_password_length %> min.</em>
+      <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+        <div><%= t('.waiting_confirmation') %> <%= resource.unconfirmed_email %></div>
+      <% end %>
+
+      <div class="form-group">
+        <%= f.password_field :password,
+                             autocomplete: 'off',
+                             placeholder: t('activerecord.attributes.user.password'),
+                             class: 'form-control' %>
+        <small class="form-text text-muted">
+          <%= t('.optional_password') %>
+        </small>
+      </div>
+
+      <div class="form-group">
+        <%= f.password_field :password_confirmation,
+                             autocomplete: 'off',
+                             placeholder: t('activerecord.attributes.user.password_confirmation'),
+                             class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <%= f.password_field :current_password,
+                             autocomplete: 'off',
+                             placeholder: t('activerecord.attributes.user.current_password'),
+                             class: 'form-control' %>
+        <small class="form-text text-muted">
+          <%= t('.required_current_password') %>
+        </small>
+      </div>
+
+      <div class="form-group">
+        <%= f.submit t('.update'), class: 'btn btn-primary btn-block' %>
+      </div>
     <% end %>
+
+    <p>
+      <%= button_to t('.delete_account'),
+                    registration_path(resource_name),
+                    class: 'btn btn-danger btn-block',
+                    data: { confirm: t('.confirmation_message') },
+                    method: :delete %>
+    </p>
   </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :current_password %> <i><%= t('.required_current_password') %></i><br />
-    <%= f.password_field :current_password, autocomplete: "off" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit t('.update') %>
-  </div>
-<% end %>
-
-<h3><%= t('.delete_account') %></h3>
-
-<p><%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: t('.confirmation_message') }, method: :delete %></p>
+</div>

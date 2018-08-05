@@ -7,8 +7,8 @@ en:
       edit:
         header: "Edit account"
         waiting_confirmation: "Currently waiting confirmation for: "
-        optional_password: "leave blank if you don't want to change it"
-        required_current_password: "we need it to confirm your changes"
+        optional_password: "Leave blank if you don't want to change it"
+        required_current_password: "We need it to confirm your changes"
         update: "Update"
         delete_account: "Delete my account"
         confirmation_message: "Are you sure?"
