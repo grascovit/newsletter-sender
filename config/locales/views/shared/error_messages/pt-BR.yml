@@ -1,0 +1,4 @@
+pt-BR:
+  shared:
+    error_messages:
+      validation_failed: "Algo deu errado:"

@@ -1,0 +1,4 @@
+en:
+  shared:
+    error_messages:
+      validation_failed: "Something is wrong:"
