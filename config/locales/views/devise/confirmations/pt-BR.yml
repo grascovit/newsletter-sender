@@ -1,0 +1,6 @@
+pt-BR:
+  devise:
+    confirmations:
+      new:
+        header: "Reenviar instruções para confirmar email"
+        resend: "Reenviar"

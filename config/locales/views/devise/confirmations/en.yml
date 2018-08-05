@@ -1,0 +1,6 @@
+en:
+  devise:
+    confirmations:
+      new:
+        header: "Resend confirmation instructions"
+        resend: "Resend"

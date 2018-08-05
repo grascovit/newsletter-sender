@@ -1,0 +1,11 @@
+en:
+  devise:
+    passwords:
+      new:
+        header: "Forgot your password?"
+        reset: "Send me reset password instructions"
+      edit:
+        header: "Change your password"
+        change: "Change my password"
+        new_password: "New password"
+        confirm_new_password: "Confirm new password"

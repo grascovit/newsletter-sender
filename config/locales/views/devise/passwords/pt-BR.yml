@@ -1,0 +1,11 @@
+pt-BR:
+  devise:
+    passwords:
+      new:
+        header: "Esqueceu sua senha?"
+        reset: "Me envie instruções para resetar minha senha"
+      edit:
+        header: "Atualize sua senha"
+        change: "Atualize minha senha"
+        new_password: "Nova senha"
+        confirm_new_password: "Confirme sua nova senha"

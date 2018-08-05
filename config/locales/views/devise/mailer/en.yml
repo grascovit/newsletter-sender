@@ -1,0 +1,19 @@
+en:
+  devise:
+    mailer:
+      confirmation_instructions:
+        welcome: "Welcome %{name}"
+        instructions: "You can confirm your account email through the link below:"
+        confirm: "Confirm my account"
+      email_changed:
+        hello: "Hello %{name}."
+        changing: "We're contacting you to notify you that your email is being changed to %{email}."
+        changed: "We're contacting you to notify you that your email has been changed to %{email}."
+      password_change:
+        hello: "Hello %{name}."
+        changed: "We're contacting you to notify you that your password has been changed."
+      reset_password_instructions:
+        hello: "Hello %{name}."
+        instructions: "Someone has requested a link to change your password. You can do this through the link below."
+        change: "Change my password"
+        ignore: "If you didn't request this, please ignore this email."

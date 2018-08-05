@@ -1,0 +1,19 @@
+pt-BR:
+  devise:
+    mailer:
+      confirmation_instructions:
+        welcome: "Bem-vindo, %{name}."
+        instructions: "Você pode confirmar sua conta através do link abaixo:"
+        confirm: "Confirmar minha conta"
+      email_changed:
+        hello: "Olá, %{name}."
+        changing: "Nós estamos entrando em contato para avisar que seu email está sendo alterado para %{email}."
+        changed: "Nós estamos entrando em contato para avisar que seu email foi alterado para %{email}."
+      password_change:
+        hello: "Olá, %{name}."
+        changed: "Nós estamos entrando em contato para avisar que sua senha foi alterada."
+      reset_password_instructions:
+        hello: "Olá, %{name}."
+        instructions: "Você requisitou a mudança de senha para sua conta. Você pode finalizar clicando no link abaixo."
+        change: "Alterar minha senha"
+        ignore: "Se você não requisitou a mudança de senha, por favor, ignore este email."

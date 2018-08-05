@@ -1,0 +1,8 @@
+pt-BR:
+  devise:
+    shared:
+      links:
+        login: "Login"
+        sign_up: "Cadastrar"
+        forgot_password: "Esqueceu sua senha?"
+        confirmation_email: "Não recebeu as instruções de confirmação?"

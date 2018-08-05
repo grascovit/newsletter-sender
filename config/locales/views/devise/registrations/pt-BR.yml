@@ -1,0 +1,14 @@
+pt-BR:
+  devise:
+    registrations:
+      new:
+        header: "Nova conta"
+        sign_up: "Cadastrar"
+      edit:
+        header: "Atualizar conta"
+        waiting_confirmation: "Aguardando confirmação para: "
+        optional_password: "deixe em branco se você não quiser alterá-la"
+        required_current_password: "precisamos para confirmar suas alterações"
+        update: "Atualizar"
+        delete_account: "Apagar minha conta"
+        confirmation_message: "Você tem certeza?"
