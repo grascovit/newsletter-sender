@@ -1,0 +1,17 @@
+en:
+  senders:
+    edit:
+      header: "Edit sender"
+      back: "Back to senders"
+    new:
+      header: "New sender"
+      back: "Back to senders"
+    form:
+      submit: "Submit"
+    index:
+      header: "Senders"
+      new_sender: "New sender"
+      name: "Name"
+      email: "Email"
+      actions: "Actions"
+      confirmation_message: "Are you sure?"

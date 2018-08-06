@@ -1,0 +1,17 @@
+pt-BR:
+  senders:
+    edit:
+      header: "Atualizar remetente"
+      back: "Voltar aos remetentes"
+    new:
+      header: "Novo remetente"
+      back: "Voltar aos remetentes"
+    form:
+      submit: "Enviar"
+    index:
+      header: "Remetentes"
+      new_sender: "Novo remetente"
+      name: "Nome"
+      email: "Email"
+      actions: "Ações"
+      confirmation_message: "Você tem certeza?"

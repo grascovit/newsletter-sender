@@ -1,0 +1,11 @@
+en:
+  activerecord:
+    models:
+      sender:
+        one: Sender
+        other: Senders
+    attributes:
+      sender:
+        name: Name
+        email: Email
+        user: User

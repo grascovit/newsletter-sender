@@ -1,0 +1,8 @@
+pt-BR:
+  senders:
+    create:
+      success: "Remetente criado com sucesso"
+    update:
+      success: "Remetente atualizado com sucesso"
+    destroy:
+      success: "Remetente excluído com sucesso"

@@ -1,0 +1,8 @@
+en:
+  senders:
+    create:
+      success: "Sender was successfully created"
+    update:
+      success: "Sender was successfully updated"
+    destroy:
+      success: "Sender was successfully destroyed"
