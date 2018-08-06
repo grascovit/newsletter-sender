@@ -9,6 +9,7 @@ gem 'bootsnap', '~> 1.3.1', require: false
 gem 'bootstrap', '~> 4.1.3'
 gem 'devise', '~> 4.4.3'
 gem 'figaro', '~> 1.1.1'
+gem 'font-awesome-sass', '~> 5.2.0'
 gem 'jquery-rails', '~> 4.3.3'
 gem 'pg', '~> 1.0.0'
 gem 'puma', '~> 3.12.0'
