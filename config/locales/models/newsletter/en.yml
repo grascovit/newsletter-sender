@@ -1,0 +1,14 @@
+en:
+  activerecord:
+    models:
+      newsletter:
+        one: "Newsletter"
+        other: "Newsletters"
+    attributes:
+      newsletter:
+        title: "Title"
+        body: "Body"
+        sent_at: "Sent at"
+        list: "List"
+        sender: "Sender"
+        template: "Template"

@@ -1,0 +1,8 @@
+pt-BR:
+  newsletters:
+    create:
+      success: "Informativo criado com sucesso"
+    update:
+      success: "Informativo atualizado com sucesso"
+    destroy:
+      success: "Informativo excluído com sucesso"

@@ -1,0 +1,8 @@
+en:
+  newsletters:
+    create:
+      success: "Newsletter was successfully created"
+    update:
+      success: "Newsletter was successfully updated"
+    destroy:
+      success: "Newsletter was successfully destroyed"

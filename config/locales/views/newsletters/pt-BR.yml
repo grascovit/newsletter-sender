@@ -1,0 +1,26 @@
+pt-BR:
+  newsletters:
+    show:
+      header: "Informativo"
+      back: "Voltar aos informativos"
+    edit:
+      header: "Atualizar informativo"
+      back: "Voltar aos informativos"
+    new:
+      header: "Novo informativo"
+      back: "Voltar aos informativos"
+    form:
+      submit: "Enviar"
+      select_list: "Selecione uma lista"
+      select_sender: "Selecione um remetente"
+      select_template: "Selecione um template"
+    index:
+      header: "Informativos"
+      new_newsletter: "Novo informativo"
+      title: "Título"
+      list: "Lista"
+      sender: "Remetente"
+      template: "Template"
+      sent_at: "Enviado em"
+      actions: "Ações"
+      confirmation_message: "Você tem certeza?"

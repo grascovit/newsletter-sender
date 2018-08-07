@@ -1,0 +1,14 @@
+pt-BR:
+  activerecord:
+    models:
+      newsletter:
+        one: "Informativo"
+        other: "Informativos"
+    attributes:
+      newsletter:
+        title: "Título"
+        body: "Mensagem"
+        sent_at: "Enviado em"
+        list: "Lista"
+        sender: "Remetente"
+        template: "Template"

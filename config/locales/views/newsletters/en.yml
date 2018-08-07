@@ -1,0 +1,26 @@
+en:
+  newsletters:
+    show:
+      header: "Newsletter"
+      back: "Back to newsletters"
+    edit:
+      header: "Edit newsletter"
+      back: "Back to newsletters"
+    new:
+      header: "New newsletter"
+      back: "Back to newsletters"
+    form:
+      submit: "Submit"
+      select_list: "Select a list"
+      select_sender: "Select a sender"
+      select_template: "Select a template"
+    index:
+      header: "Newsletters"
+      new_newsletter: "New newsletter"
+      title: "Title"
+      list: "List"
+      sender: "Sender"
+      template: "Template"
+      sent_at: "Sent at"
+      actions: "Actions"
+      confirmation_message: "Are you sure?"
