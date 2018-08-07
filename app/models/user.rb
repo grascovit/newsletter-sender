@@ -8,6 +8,7 @@ class User < ApplicationRecord
   has_many :lists, class_name: 'RecipientList', dependent: :destroy
   has_many :recipients, through: :lists
   has_many :senders, dependent: :destroy
+  has_many :newsletters, through: :senders
   has_many :templates, dependent: :destroy
 
   validates :name, presence: true

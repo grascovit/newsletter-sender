@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_07_021927) do
+ActiveRecord::Schema.define(version: 2018_08_07_024628) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,12 +19,14 @@ ActiveRecord::Schema.define(version: 2018_08_07_021927) do
     t.string "title"
     t.text "body"
     t.datetime "sent_at"
-    t.bigint "sender_id"
     t.bigint "list_id"
+    t.bigint "sender_id"
+    t.bigint "template_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["list_id"], name: "index_newsletters_on_list_id"
     t.index ["sender_id"], name: "index_newsletters_on_sender_id"
+    t.index ["template_id"], name: "index_newsletters_on_template_id"
   end
 
   create_table "recipient_lists", force: :cascade do |t|
@@ -88,6 +90,7 @@ ActiveRecord::Schema.define(version: 2018_08_07_021927) do
 
   add_foreign_key "newsletters", "recipient_lists", column: "list_id"
   add_foreign_key "newsletters", "senders"
+  add_foreign_key "newsletters", "templates"
   add_foreign_key "recipient_lists", "users"
   add_foreign_key "recipients", "recipient_lists", column: "list_id"
   add_foreign_key "senders", "users"
