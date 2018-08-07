@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-11 col-md-5 mx-auto">
+    <h4 class="my-4 text-center">
+      <%= t('.header') %>
+    </h4>
+    <%= render 'form', list: @list %>
+    <%= link_to t('.back'), recipient_lists_path, class: 'btn btn-sm btn-block btn-link' %>
+  </div>
+</div>

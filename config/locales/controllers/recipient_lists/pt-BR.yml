@@ -1,0 +1,8 @@
+pt-BR:
+  recipient_lists:
+    create:
+      success: "Lista criada com sucesso"
+    update:
+      success: "Lista atualizada com sucesso"
+    destroy:
+      success: "Lista excluída com sucesso"

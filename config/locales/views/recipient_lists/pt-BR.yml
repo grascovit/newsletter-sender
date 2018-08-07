@@ -1,0 +1,19 @@
+pt-BR:
+  recipient_lists:
+    show:
+      header: "Lista de destinatários"
+      back: "Voltar às listas"
+    edit:
+      header: "Atualizar lista"
+      back: "Voltar às listas"
+    new:
+      header: "Nova lista"
+      back: "Voltar às listas"
+    form:
+      submit: "Enviar"
+    index:
+      header: "Listas de destinatários"
+      new_list: "Nova lista"
+      name: "Nome"
+      actions: "Ações"
+      confirmation_message: "Você tem certeza?"

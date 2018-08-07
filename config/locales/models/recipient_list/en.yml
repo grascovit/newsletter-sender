@@ -1,0 +1,10 @@
+en:
+  activerecord:
+    models:
+      recipient_list:
+        one: Recipient list
+        other: Recipient lists
+    attributes:
+      recipient_list:
+        name: Name
+        user: User

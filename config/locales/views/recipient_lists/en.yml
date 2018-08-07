@@ -1,0 +1,19 @@
+en:
+  recipient_lists:
+    show:
+      header: "Recipients list"
+      back: "Back to lists"
+    edit:
+      header: "Edit list"
+      back: "Back to lists"
+    new:
+      header: "New list"
+      back: "Back to lists"
+    form:
+      submit: "Submit"
+    index:
+      header: "Recipients lists"
+      new_list: "New list"
+      name: "Name"
+      actions: "Actions"
+      confirmation_message: "Are you sure?"

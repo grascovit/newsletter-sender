@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-12 mx-auto">
+    <h4 class="my-4 text-center">
+      <%= t('.header') %>
+    </h4>
+    <%= link_to new_recipient_list_path, class: 'float-right btn btn-sm btn-primary my-2' do %>
+      <%= t('.new_list') %>
+      <i class="fas fa-user-plus"></i>
+    <% end %>
+    <div class="table-responsive">
+      <table class="table text-center">
+        <thead>
+        <tr>
+          <th><%= t('.name') %></th>
+          <th><%= t('.actions') %></th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @lists.each do |list| %>
+          <tr>
+            <td><%= list.name %></td>
+            <td>
+              <%= link_to list, class: 'btn btn-sm btn-primary' do %>
+                <i class="fas fa-list-ul"></i>
+              <% end %>
+              <%= link_to edit_recipient_list_path(list), class: 'btn btn-sm btn-warning' do %>
+                <i class="fas fa-pencil-alt fa-inverse"></i>
+              <% end %>
+              <%= link_to list, method: :delete, data: { confirm: t('.confirmation_message') }, class: 'btn btn-sm btn-danger' do %>
+                <i class="fas fa-trash"></i>
+              <% end %>
+            </td>
+          </tr>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

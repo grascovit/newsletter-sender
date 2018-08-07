@@ -1,0 +1,13 @@
+<%= form_for(list) do |form| %>
+  <%= render 'shared/error_messages', object: list %>
+  <div class="form-group">
+    <%= form.text_field :name,
+                        autofocus: true,
+                        autocomplete: 'on',
+                        placeholder: t('activerecord.attributes.recipient_list.name'),
+                        class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= form.submit t('.submit'), class: 'btn btn-primary btn-block' %>
+  </div>
+<% end %>
