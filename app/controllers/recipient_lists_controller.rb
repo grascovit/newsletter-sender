@@ -17,7 +17,6 @@ class RecipientListsController < ApplicationController
 
   def create
     @list = current_user.lists.new(list_params)
-    @list.user = current_user
 
     if @list.save
       redirect_to recipient_lists_path, notice: t('.success')
@@ -48,8 +47,7 @@ class RecipientListsController < ApplicationController
 
   def list_params
     params.require(:recipient_list).permit(
-      :name,
-      :user_id
+      :name
     )
   end
 end

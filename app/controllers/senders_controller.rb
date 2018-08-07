@@ -15,7 +15,6 @@ class SendersController < ApplicationController
 
   def create
     @sender = current_user.senders.new(sender_params)
-    @sender.user = current_user
 
     if @sender.save
       redirect_to senders_path, notice: t('.success')
@@ -47,8 +46,7 @@ class SendersController < ApplicationController
   def sender_params
     params.require(:sender).permit(
       :name,
-      :email,
-      :user_id
+      :email
     )
   end
 end

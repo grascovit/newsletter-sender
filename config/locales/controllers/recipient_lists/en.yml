@@ -1,7 +1,7 @@
 en:
   recipient_lists:
     create:
-      success: "Lista was successfully created"
+      success: "List was successfully created"
     update:
       success: "List was successfully updated"
     destroy:
