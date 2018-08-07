@@ -4,7 +4,7 @@ class SendersController < ApplicationController
   before_action :fetch_sender, only: %i[edit update destroy]
 
   def index
-    @senders = current_user.senders.all
+    @senders = current_user.senders
   end
 
   def new

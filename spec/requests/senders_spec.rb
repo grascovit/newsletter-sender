@@ -61,7 +61,7 @@ RSpec.describe 'Senders', type: :request do
         end.to change(Sender, :count).by(1)
       end
 
-      it 'redirects to the created sender' do
+      it 'redirects to the senders list' do
         post senders_path, params: valid_attributes
 
         expect(response).to redirect_to(senders_path)
@@ -100,7 +100,7 @@ RSpec.describe 'Senders', type: :request do
         end.to change(sender, :name).from(sender.name).to('New name')
       end
 
-      it 'redirects to the sender' do
+      it 'redirects to the senders list' do
         put sender_path(sender), params: new_attributes
         sender.reload
 

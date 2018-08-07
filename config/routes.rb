@@ -13,5 +13,5 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :senders
+  resources :senders, except: %i[show]
 end

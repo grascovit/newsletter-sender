@@ -3,7 +3,7 @@
     <h4 class="my-4 text-center">
       <%= t('.header') %>
     </h4>
-    <%= render 'form', sender: @sender, url: senders_url(current_user) %>
+    <%= render 'form', sender: @sender %>
     <%= link_to t('.back'), senders_path, class: 'btn btn-sm btn-block btn-link' %>
   </div>
 </div>
