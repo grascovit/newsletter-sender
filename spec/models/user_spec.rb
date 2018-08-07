@@ -11,6 +11,7 @@ RSpec.describe User, type: :model do
     end
     it { is_expected.to have_many(:recipients).through(:lists) }
     it { is_expected.to have_many(:senders).dependent(:destroy) }
+    it { is_expected.to have_many(:templates).dependent(:destroy) }
   end
 
   describe 'validations' do

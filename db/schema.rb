@@ -10,10 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_07_005307) do
+ActiveRecord::Schema.define(version: 2018_08_07_021927) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "newsletters", force: :cascade do |t|
+    t.string "title"
+    t.text "body"
+    t.datetime "sent_at"
+    t.bigint "sender_id"
+    t.bigint "list_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["list_id"], name: "index_newsletters_on_list_id"
+    t.index ["sender_id"], name: "index_newsletters_on_sender_id"
+  end
 
   create_table "recipient_lists", force: :cascade do |t|
     t.string "name"
@@ -42,6 +54,15 @@ ActiveRecord::Schema.define(version: 2018_08_07_005307) do
     t.index ["user_id"], name: "index_senders_on_user_id"
   end
 
+  create_table "templates", force: :cascade do |t|
+    t.string "name"
+    t.text "body"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_templates_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email", default: "", null: false
@@ -65,7 +86,10 @@ ActiveRecord::Schema.define(version: 2018_08_07_005307) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "newsletters", "recipient_lists", column: "list_id"
+  add_foreign_key "newsletters", "senders"
   add_foreign_key "recipient_lists", "users"
   add_foreign_key "recipients", "recipient_lists", column: "list_id"
   add_foreign_key "senders", "users"
+  add_foreign_key "templates", "users"
 end
