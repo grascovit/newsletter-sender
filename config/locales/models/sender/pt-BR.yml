@@ -2,10 +2,10 @@ pt-BR:
   activerecord:
     models:
       sender:
-        one: Remetente
-        other: Remetentes
+        one: "Remetente"
+        other: "Remetentes"
     attributes:
       sender:
-        name: Nome
-        email: Email
-        user: Usuário
+        name: "Nome"
+        email: "Email"
+        user: "Usuário"

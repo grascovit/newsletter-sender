@@ -2,9 +2,9 @@ pt-BR:
   activerecord:
     models:
       recipient_list:
-        one: Lista de destinatários
-        other: Listas de destinatários
+        one: "Lista de destinatários"
+        other: "Listas de destinatários"
     attributes:
       recipient_list:
-        name: Nome
-        user: Usuário
+        name: "Nome"
+        user: "Usuário"
