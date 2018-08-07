@@ -1,0 +1,8 @@
+pt-BR:
+  templates:
+    create:
+      success: "Template criado com sucesso"
+    update:
+      success: "Template atualizado com sucesso"
+    destroy:
+      success: "Template excluído com sucesso"

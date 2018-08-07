@@ -1,0 +1,11 @@
+en:
+  activerecord:
+    models:
+      template:
+        one: "Template"
+        other: "Templates"
+    attributes:
+      template:
+        name: "Name"
+        body: "Body"
+        user: "User"

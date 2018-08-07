@@ -1,0 +1,19 @@
+pt-BR:
+  templates:
+    show:
+      header: "Template"
+      back: "Voltar aos templates"
+    edit:
+      header: "Atualizar template"
+      back: "Voltar aos templates"
+    new:
+      header: "Nova template"
+      back: "Voltar aos templates"
+    form:
+      submit: "Enviar"
+    index:
+      header: "Templates"
+      new_template: "Novo template"
+      name: "Nome"
+      actions: "Ações"
+      confirmation_message: "Você tem certeza?"

@@ -1,0 +1,11 @@
+pt-BR:
+  activerecord:
+    models:
+      template:
+        one: "Template"
+        other: "Templates"
+    attributes:
+      template:
+        name: "Nome"
+        body: "Mensagem"
+        user: "Usuário"

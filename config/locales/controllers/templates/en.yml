@@ -1,0 +1,8 @@
+en:
+  templates:
+    create:
+      success: "Template was successfully created"
+    update:
+      success: "Template was successfully updated"
+    destroy:
+      success: "Template was successfully destroyed"

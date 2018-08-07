@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   resources :recipients, except: %i[show]
   resources :recipient_lists
   resources :senders, except: %i[show]
+  resources :templates
 end

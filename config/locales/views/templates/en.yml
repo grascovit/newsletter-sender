@@ -1,0 +1,19 @@
+en:
+  recipient_lists:
+    show:
+      header: "Template"
+      back: "Back to templates"
+    edit:
+      header: "Edit template"
+      back: "Back to templates"
+    new:
+      header: "New template"
+      back: "Back to templates"
+    form:
+      submit: "Submit"
+    index:
+      header: "Templates"
+      new_template: "New template"
+      name: "Name"
+      actions: "Actions"
+      confirmation_message: "Are you sure?"
