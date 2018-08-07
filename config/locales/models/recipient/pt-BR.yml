@@ -1,0 +1,11 @@
+pt-BR:
+  activerecord:
+    models:
+      recipient:
+        one: "Destinatário"
+        other: "Destinatários"
+    attributes:
+      recipient:
+        name: "Nome"
+        email: "Email"
+        list: "Lista"

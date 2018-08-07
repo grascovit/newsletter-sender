@@ -1,0 +1,8 @@
+pt-BR:
+  recipients:
+    create:
+      success: "Destinatário criado com sucesso"
+    update:
+      success: "Destinatário atualizado com sucesso"
+    destroy:
+      success: "Destinatário excluído com sucesso"

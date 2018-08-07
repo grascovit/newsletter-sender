@@ -1,0 +1,19 @@
+pt-BR:
+  recipients:
+    edit:
+      header: "Atualizar destinatário"
+      back: "Voltar aos destinatários"
+    new:
+      header: "Novo destinatário"
+      back: "Voltar aos destinatários"
+    form:
+      submit: "Enviar"
+      select_list: "Selecione uma lista"
+    index:
+      header: "Destinatários"
+      new_recipient: "Novo destinatário"
+      name: "Nome"
+      email: "Email"
+      list: "Lista"
+      actions: "Ações"
+      confirmation_message: "Você tem certeza?"

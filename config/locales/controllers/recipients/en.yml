@@ -1,0 +1,8 @@
+en:
+  recipients:
+    create:
+      success: "Recipient was successfully created"
+    update:
+      success: "Recipient was successfully updated"
+    destroy:
+      success: "Recipient was successfully destroyed"

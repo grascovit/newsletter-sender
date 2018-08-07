@@ -1,0 +1,11 @@
+en:
+  activerecord:
+    models:
+      recipient:
+        one: "Recipient"
+        other: "Recipients"
+    attributes:
+      recipient:
+        name: "Name"
+        email: "Email"
+        list: "List"
