@@ -6,6 +6,7 @@ class User < ApplicationRecord
          :validatable, :confirmable
 
   has_many :lists, class_name: 'RecipientList', dependent: :destroy
+  has_many :recipients, through: :lists
   has_many :senders, dependent: :destroy
 
   validates :name, presence: true

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_07_001016) do
+ActiveRecord::Schema.define(version: 2018_08_07_005307) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,16 @@ ActiveRecord::Schema.define(version: 2018_08_07_001016) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_recipient_lists_on_user_id"
+  end
+
+  create_table "recipients", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.bigint "list_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email", "list_id"], name: "index_recipients_on_email_and_list_id", unique: true
+    t.index ["list_id"], name: "index_recipients_on_list_id"
   end
 
   create_table "senders", force: :cascade do |t|
@@ -56,5 +66,6 @@ ActiveRecord::Schema.define(version: 2018_08_07_001016) do
   end
 
   add_foreign_key "recipient_lists", "users"
+  add_foreign_key "recipients", "recipient_lists", column: "list_id"
   add_foreign_key "senders", "users"
 end
