@@ -3,7 +3,7 @@
 //= require jquery3
 //= require popper
 //= require bootstrap
-//= require vendor/tinymce/tinymce.min
+//= require tinymce
 //= require_tree .
 
 $(document).on('turbolinks:load', function() {
@@ -14,6 +14,6 @@ $(document).on('turbolinks:load', function() {
     toolbar: 'undo redo | bold italic underline | ' +
       'fontselect fontsizeselect forecolor backcolor | ' +
       'alignleft aligncenter alignright alignjustify | ' +
-      'bullist numlist outdent indent | link image'
+      'bullist numlist outdent indent'
   });
 });

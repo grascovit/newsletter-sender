@@ -1,6 +1,9 @@
 language: ruby
-cache: bundler
+cache:
+  bundler: true
+  yarn: true
 before_script:
+  - yarn
   - bundle exec rake db:setup
 script:
   - bundle exec rspec
