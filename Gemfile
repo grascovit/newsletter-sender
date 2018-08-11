@@ -15,7 +15,6 @@ gem 'pg', '~> 1.0.0'
 gem 'puma', '~> 3.12.0'
 gem 'rails', '~> 5.2.0'
 gem 'sass-rails', '~> 5.0.7'
-gem 'tinymce-rails', '~> 4.8.2'
 gem 'turbolinks', '~> 5.1.1'
 gem 'uglifier', '~> 4.1.17'
 
