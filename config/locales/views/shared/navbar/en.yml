@@ -1,0 +1,11 @@
+en:
+  shared:
+    navbar:
+      app_name: "Newsletter Sender"
+      newsletters: "Newsletters"
+      recipients: "Recipients"
+      recipient_lists: "Recipient lists"
+      senders: "Senders"
+      templates: "Templates"
+      edit_profile: "Edit profile"
+      sign_out: "Sign out"

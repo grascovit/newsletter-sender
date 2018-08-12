@@ -1,0 +1,11 @@
+pt-BR:
+  shared:
+    navbar:
+      app_name: "Newsletter Sender"
+      newsletters: "Informativos"
+      recipients: "Destinatários"
+      recipient_lists: "Listas de destinatários"
+      senders: "Remetentes"
+      templates: "Templates"
+      edit_profile: "Editar perfil"
+      sign_out: "Sair"

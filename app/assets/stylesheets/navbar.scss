@@ -1,0 +1,13 @@
+.navbar-nav {
+  .nav-item {
+    .nav-link {
+      padding: 0 0.85em;
+    }
+
+    &.active {
+      .nav-link {
+        color: #007bff;
+      }
+    }
+  }
+}
