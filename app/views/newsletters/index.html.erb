@@ -22,7 +22,7 @@
         <tbody>
         <% @newsletters.each do |newsletter| %>
           <tr>
-            <td><%= newsletter.title %></td>
+            <td class="truncate" data-max-length="50" data-read-more="..."><%= newsletter.title %></td>
             <td><%= newsletter.list.name %></td>
             <td><%= newsletter.sender.name %></td>
             <td><%= newsletter.template&.name %></td>
