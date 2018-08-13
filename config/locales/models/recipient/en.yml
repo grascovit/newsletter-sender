@@ -9,3 +9,6 @@ en:
         name: "Name"
         email: "Email"
         list: "List"
+    errors:
+      messages:
+        already_in_list: "already exists in this list"

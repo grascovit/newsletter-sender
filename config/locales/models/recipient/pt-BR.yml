@@ -9,3 +9,6 @@ pt-BR:
         name: "Nome"
         email: "Email"
         list: "Lista"
+    errors:
+      messages:
+        already_in_list: "já existe nesta lista"
