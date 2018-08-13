@@ -11,9 +11,10 @@ $(document).on('turbolinks:load', function() {
   tinymce.init({
     selector: '.tinymce',
     language: 'pt_BR',
+    plugins: 'code',
     toolbar: 'undo redo | bold italic underline | ' +
       'fontselect fontsizeselect forecolor backcolor | ' +
       'alignleft aligncenter alignright alignjustify | ' +
-      'bullist numlist outdent indent'
+      'bullist numlist outdent indent code'
   });
 });
