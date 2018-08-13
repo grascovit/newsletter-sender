@@ -2,7 +2,12 @@ pt-BR:
   templates:
     show:
       header: "Template"
+      edit: "Editar template"
+      delete: "Excluir template"
+      confirmation_message: "Você tem certeza?"
       back: "Voltar aos templates"
+      name: "Nome: "
+      body: "Mensagem: "
     edit:
       header: "Atualizar template"
       back: "Voltar aos templates"
