@@ -2,7 +2,16 @@ pt-BR:
   newsletters:
     show:
       header: "Informativo"
+      edit: "Editar informativo"
+      delete: "Excluir informativo"
+      confirmation_message: "Você tem certeza?"
       back: "Voltar aos informativos"
+      title: "Título: "
+      list: "Lista de destinatários: "
+      sender: "Remetente: "
+      template: "Template: "
+      sent_at: "Enviado em: "
+      body: "Mensagem: "
     edit:
       header: "Atualizar informativo"
       back: "Voltar aos informativos"
@@ -10,7 +19,7 @@ pt-BR:
       header: "Novo informativo"
       back: "Voltar aos informativos"
     form:
-      submit: "Enviar"
+      submit: "Salvar"
       select_list: "Selecione uma lista"
       select_sender: "Selecione um remetente"
       select_template: "Selecione um template"

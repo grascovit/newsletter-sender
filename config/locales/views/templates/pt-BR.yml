@@ -10,7 +10,7 @@ pt-BR:
       header: "Nova template"
       back: "Voltar aos templates"
     form:
-      submit: "Enviar"
+      submit: "Salvar"
     index:
       header: "Templates"
       new_template: "Novo template"

@@ -7,7 +7,7 @@ pt-BR:
       header: "Novo remetente"
       back: "Voltar aos remetentes"
     form:
-      submit: "Enviar"
+      submit: "Salvar"
     index:
       header: "Remetentes"
       new_sender: "Novo remetente"

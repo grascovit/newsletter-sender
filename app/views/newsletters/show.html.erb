@@ -3,7 +3,44 @@
     <h4 class="my-4 text-center">
       <%= t('.header') %>
     </h4>
-    <!-- TODO: render newsletter -->
-    <%= link_to t('.back'), newsletters_path, class: 'btn btn-sm btn-block btn-link' %>
+    <div class="row">
+      <div class="col-12">
+        <strong><%= t('.title') %></strong><%= @newsletter.title %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <strong><%= t('.list') %></strong><%= @newsletter.list.name %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <strong><%= t('.sender') %></strong><%= @newsletter.sender.name %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <strong><%= t('.sent_at') %></strong><%= @newsletter.sent_at %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <strong><%= t('.template') %></strong><%= @newsletter.template.name %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <strong><%= t('.body') %></strong><%= @newsletter.body.html_safe %>
+      </div>
+    </div>
+    <div class="row my-4">
+      <div class="col-12">
+        <%= link_to t('.edit'), edit_newsletter_path(@newsletter), class: 'btn btn-block btn-primary' %>
+        <%= link_to t('.delete'), newsletter_path(@newsletter),
+                                  data: { confirm: t('.confirmation_message') },
+                                  method: :delete, class: 'btn btn-block btn-danger' %>
+        <%= link_to t('.back'), newsletters_path, class: 'btn btn-sm btn-block btn-link' %>
+      </div>
+    </div>
   </div>
 </div>

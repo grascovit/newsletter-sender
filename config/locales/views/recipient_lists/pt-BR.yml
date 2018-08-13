@@ -10,7 +10,7 @@ pt-BR:
       header: "Nova lista"
       back: "Voltar às listas"
     form:
-      submit: "Enviar"
+      submit: "Salvar"
     index:
       header: "Listas de destinatários"
       new_list: "Nova lista"

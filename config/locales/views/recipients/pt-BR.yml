@@ -7,7 +7,7 @@ pt-BR:
       header: "Novo destinatário"
       back: "Voltar aos destinatários"
     form:
-      submit: "Enviar"
+      submit: "Salvar"
       select_list: "Selecione uma lista"
     index:
       header: "Destinatários"
