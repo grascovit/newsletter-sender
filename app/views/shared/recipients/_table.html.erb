@@ -1,0 +1,30 @@
+<div class="table-responsive">
+  <table class="table text-center">
+    <thead>
+    <tr>
+      <th><%= t('.name') %></th>
+      <th><%= t('.email') %></th>
+      <th><%= t('.list') %></th>
+      <th><%= t('.actions') %></th>
+    </tr>
+    </thead>
+    <tbody>
+    <% recipients.each do |recipient| %>
+      <tr>
+        <td><%= recipient.name %></td>
+        <td><%= recipient.email %></td>
+        <td><%= recipient.list.name %></td>
+        <td>
+          <%= link_to edit_recipient_path(recipient), class: 'btn btn-sm btn-warning' do %>
+            <i class="fas fa-pencil-alt fa-inverse"></i>
+          <% end %>
+          <%= link_to recipient, method: :delete, data: { confirm: t('.confirmation_message') }, class: 'btn btn-sm btn-danger' do %>
+            <i class="fas fa-trash"></i>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>
+<%= paginate recipients %>

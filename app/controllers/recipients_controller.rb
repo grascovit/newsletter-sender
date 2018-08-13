@@ -5,6 +5,9 @@ class RecipientsController < ApplicationController
 
   def index
     @recipients = current_user.recipients
+                              .includes(:list)
+                              .order(:name)
+                              .page(params[:page])
   end
 
   def new

@@ -1,0 +1,9 @@
+pt-BR:
+  shared:
+    recipients:
+      table:
+        name: "Nome"
+        email: "Email"
+        list: "Lista"
+        actions: "Ações"
+        confirmation_message: "Você tem certeza?"

@@ -12,8 +12,3 @@ pt-BR:
     index:
       header: "Destinatários"
       new_recipient: "Novo destinatário"
-      name: "Nome"
-      email: "Email"
-      list: "Lista"
-      actions: "Ações"
-      confirmation_message: "Você tem certeza?"
