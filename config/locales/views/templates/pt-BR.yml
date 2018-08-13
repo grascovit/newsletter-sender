@@ -6,7 +6,6 @@ pt-BR:
       delete: "Excluir template"
       confirmation_message: "Você tem certeza?"
       back: "Voltar aos templates"
-      name: "Nome: "
       body: "Mensagem: "
     edit:
       header: "Atualizar template"

@@ -1,18 +1,9 @@
 <div class="row">
   <div class="col-11 col-md-8 mx-auto">
     <h4 class="my-4 text-center">
-      <%= t('.header') %>
+      <%= @template.name %>
     </h4>
-    <div class="row">
-      <div class="col-12">
-        <strong><%= t('.name') %></strong><%= @template.name %>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <strong><%= t('.body') %></strong><%= @template.body.html_safe %>
-      </div>
-    </div>
+    <%= @template.body.html_safe %>
     <div class="row my-4">
       <div class="col-12">
         <%= link_to t('.edit'), edit_template_path(@template), class: 'btn btn-block btn-primary' %>

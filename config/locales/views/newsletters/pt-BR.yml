@@ -6,7 +6,6 @@ pt-BR:
       delete: "Excluir informativo"
       confirmation_message: "Você tem certeza?"
       back: "Voltar aos informativos"
-      title: "Título: "
       list: "Lista de destinatários: "
       sender: "Remetente: "
       template: "Template: "

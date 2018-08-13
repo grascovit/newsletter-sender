@@ -6,7 +6,6 @@ en:
       delete: "Delete newsletter"
       confirmation_message: "Are you sure?"
       back: "Back to newsletters"
-      title: "Title: "
       list: "Recipients list: "
       sender: "Sender: "
       template: "Template: "

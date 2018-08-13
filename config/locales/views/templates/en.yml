@@ -6,7 +6,6 @@ en:
       delete: "Delete template"
       confirmation_message: "Are you sure?"
       back: "Back to templates"
-      name: "Name: "
       body: "Body: "
     edit:
       header: "Edit template"
