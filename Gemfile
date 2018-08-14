@@ -14,16 +14,16 @@ gem 'jquery-rails', '~> 4.3.3'
 gem 'kaminari', '~> 1.1.1'
 gem 'pg', '~> 1.0.0'
 gem 'puma', '~> 3.12.0'
-gem 'rails', '~> 5.2.0'
+gem 'rails', '~> 5.2.1'
 gem 'sass-rails', '~> 5.0.7'
 gem 'tinymce-rails', '~> 4.8.2'
 gem 'turbolinks', '~> 5.1.1'
-gem 'uglifier', '~> 4.1.17'
+gem 'uglifier', '~> 4.1.18'
 
 group :development, :test do
   gem 'byebug', '~> 10.0.2', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails', '~> 4.10.0'
-  gem 'rspec-rails', '~> 3.7.2'
+  gem 'rspec-rails', '~> 3.8.0'
   gem 'rubocop', '~> 0.58.2', require: false
   gem 'rubocop-rspec', '~> 1.27.0'
 end

@@ -2,7 +2,7 @@
 
 # Newsletter Sender
 
-Application created using Rails 5.2.0 and Ruby 2.5.1.
+Application created using Rails 5.2.1 and Ruby 2.5.1.
 
 #### Setup
 To get the application running, follow the steps below:
