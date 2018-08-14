@@ -19,9 +19,9 @@
         <% @lists.each do |list| %>
           <tr>
             <td><%= list.name %></td>
-            <td>
+            <td class="actions">
               <%= link_to list, class: 'btn btn-sm btn-primary' do %>
-                <i class="fas fa-list-ul"></i>
+                <i class="fas fa-info-circle"></i>
               <% end %>
               <%= link_to edit_recipient_list_path(list), class: 'btn btn-sm btn-warning' do %>
                 <i class="fas fa-pencil-alt fa-inverse"></i>

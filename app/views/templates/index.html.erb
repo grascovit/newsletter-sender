@@ -19,7 +19,7 @@
         <% @templates.each do |template| %>
           <tr>
             <td><%= template.name %></td>
-            <td>
+            <td class="actions">
               <%= link_to template, class: 'btn btn-sm btn-primary' do %>
                 <i class="fas fa-info-circle"></i>
               <% end %>

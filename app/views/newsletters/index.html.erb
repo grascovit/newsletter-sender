@@ -27,7 +27,7 @@
             <td><%= newsletter.sender.name %></td>
             <td><%= newsletter.template&.name %></td>
             <td><%= newsletter.sent_at %></td>
-            <td>
+            <td class="actions">
               <%= link_to newsletter, class: 'btn btn-sm btn-primary' do %>
                 <i class="fas fa-info-circle"></i>
               <% end %>
@@ -36,6 +36,9 @@
               <% end %>
               <%= link_to newsletter, method: :delete, data: { confirm: t('.confirmation_message') }, class: 'btn btn-sm btn-danger' do %>
                 <i class="fas fa-trash"></i>
+              <% end %>
+              <%= link_to '', method: :post, data: { confirm: t('.confirmation_message') }, class: 'btn btn-sm btn-info' do %>
+                <i class="fas fa-paper-plane"></i>
               <% end %>
             </td>
           </tr>
