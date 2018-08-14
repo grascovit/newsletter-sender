@@ -2,6 +2,7 @@
 
 class NewslettersController < ApplicationController
   before_action :fetch_newsletter, only: %i[show edit update destroy]
+  before_action :render_body, only: %i[show]
 
   def index
     @newsletters = current_user.newsletters
@@ -43,6 +44,10 @@ class NewslettersController < ApplicationController
 
   def fetch_newsletter
     @newsletter = current_user.newsletters.find(params[:id])
+  end
+
+  def render_body
+    Newsletters::RenderBody.new(@newsletter).call
   end
 
   def newsletter_params

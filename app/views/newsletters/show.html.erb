@@ -20,12 +20,12 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <strong><%= t('.template') %></strong><%= @newsletter.template.name %>
+        <strong><%= t('.template') %></strong><%= @newsletter.template&.name %>
       </div>
     </div>
-    <div class="row">
+    <div class="row my-4">
       <div class="col-12">
-        <strong><%= t('.body') %></strong><%= @newsletter.body.html_safe %>
+        <%= @newsletter.rendered_body.html_safe %>
       </div>
     </div>
     <div class="row my-4">
