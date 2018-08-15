@@ -37,7 +37,7 @@
               <%= link_to newsletter, method: :delete, data: { confirm: t('.confirmation_message') }, class: 'btn btn-sm btn-danger' do %>
                 <i class="fas fa-trash"></i>
               <% end %>
-              <%= link_to '', method: :post, data: { confirm: t('.confirmation_message') }, class: 'btn btn-sm btn-info' do %>
+              <%= link_to newsletter_sendings_path(newsletter), method: :post, data: { confirm: t('.confirmation_message') }, class: 'btn btn-sm btn-info' do %>
                 <i class="fas fa-paper-plane"></i>
               <% end %>
             </td>

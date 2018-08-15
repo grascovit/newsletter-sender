@@ -1,0 +1,6 @@
+pt-BR:
+  newsletters:
+    sendings:
+      create:
+        success: "Informativo enviado com sucesso"
+        failure: "Algo deu errado. Mas não se preocupe, nossa equipe já foi avisada"

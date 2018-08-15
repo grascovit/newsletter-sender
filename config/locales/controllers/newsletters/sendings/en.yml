@@ -1,0 +1,6 @@
+en:
+  newsletters:
+    sendings:
+      create:
+        success: "Newsletter successfully sent"
+        failure: "Something went wrong. But don't worry, our engineers have been notified"

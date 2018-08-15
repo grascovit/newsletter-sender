@@ -13,7 +13,9 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :newsletters
+  resources :newsletters do
+    resources :sendings, only: %i[create], controller: 'newsletters/sendings'
+  end
   resources :recipients, except: %i[show]
   resources :recipient_lists
   resources :senders, except: %i[show]

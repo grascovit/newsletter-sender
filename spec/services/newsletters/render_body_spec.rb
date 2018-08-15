@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'rails_helper'
+
 module Newsletters
   RSpec.describe RenderBody, type: :service do
     describe '#call' do
