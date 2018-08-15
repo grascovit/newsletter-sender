@@ -10,6 +10,7 @@ gem 'bootstrap', '~> 4.1.3'
 gem 'devise', '~> 4.4.3'
 gem 'figaro', '~> 1.1.1'
 gem 'font-awesome-sass', '~> 5.2.0'
+gem 'httparty', '~> 0.16.2'
 gem 'jquery-rails', '~> 4.3.3'
 gem 'kaminari', '~> 1.1.1'
 gem 'pg', '~> 1.0.0'
@@ -39,6 +40,7 @@ group :test do
   gem 'faker', '~> 1.9.1'
   gem 'shoulda-matchers', '~> 3.1.2'
   gem 'simplecov', '~> 0.16.1', require: false
+  gem 'webmock', '~> 3.4.2'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
