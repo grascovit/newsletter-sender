@@ -1,7 +1,7 @@
 <% if object.errors.any? %>
-  <div class="alert alert-danger">
+  <div class="alert alert-danger flash-message">
     <div class="header"><%= t('.validation_failed') %></div>
-    <ul>
+    <ul class="flash-list">
       <% object.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>

@@ -6,18 +6,23 @@ Rails:
 AllCops:
   TargetRubyVersion: 2.5.1
   Exclude:
-  - db/**/*
+    - db/**/*
 
 Style/Documentation:
   Enabled: false
+
+Metrics/LineLength:
+  Exclude:
+    - db/**/*
+    - config/**/*
 
 RSpec/ExampleLength:
   Max: 10
 
 Metrics/BlockLength:
   Exclude:
-  - spec/**/*
+    - spec/**/*
 
 Metrics/ModuleLength:
   Exclude:
-  - spec/**/*
+    - spec/**/*

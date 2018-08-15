@@ -5,7 +5,7 @@ require 'rails_helper'
 module Newsletters
   RSpec.describe Send, type: :service do
     describe '#call' do
-      subject { described_class.new(newsletter).call }
+      subject(:service) { described_class.new(newsletter).call }
 
       let(:newsletter) do
         create(:newsletter, rendered_body: 'body', sent_at: nil)
@@ -34,7 +34,7 @@ module Newsletters
 
         it 'updates the newsletter sent time' do
           expect do
-            subject
+            service
           end.to change(newsletter, :sent_at)
         end
       end
@@ -52,7 +52,7 @@ module Newsletters
 
         it 'does not update the newsletter sent time' do
           expect do
-            subject
+            service
           end.not_to change(newsletter, :sent_at)
         end
       end

@@ -1,7 +1,7 @@
 <% flash.each do |type, value| %>
   <div class="alert <%= flash_class(type) %> flash-message">
     <% if value.kind_of?(Array) %>
-      <ul>
+      <ul class="flash-list">
         <% value.each do |message| %>
           <li><%= message %></li>
         <% end %>

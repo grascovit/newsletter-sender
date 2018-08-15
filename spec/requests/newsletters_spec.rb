@@ -7,7 +7,9 @@ RSpec.describe 'Newsletters', type: :request do
   let(:list) { create(:recipient_list, user: user) }
   let(:sender) { create(:sender, user: user) }
   let(:template) { create(:template, user: user) }
-  let!(:newsletter) { create(:newsletter, list: list, sender: sender, template: template) }
+  let!(:newsletter) do
+    create(:newsletter, list: list, sender: sender, template: template)
+  end
   let(:valid_attributes) do
     {
       newsletter: {

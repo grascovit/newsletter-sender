@@ -5,7 +5,7 @@ require 'rails_helper'
 module Newsletters
   RSpec.describe RenderBody, type: :service do
     describe '#call' do
-      subject { described_class.new(newsletter).call }
+      subject(:service) { described_class.new(newsletter).call }
 
       let(:newsletter) do
         build_stubbed(:newsletter,
@@ -25,7 +25,7 @@ module Newsletters
 
         it 'assigns the rendered body to the newsletter' do
           expect do
-            subject
+            service
           end.to change(newsletter, :rendered_body).from(nil).to('title body')
         end
       end
