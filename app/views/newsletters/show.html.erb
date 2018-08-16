@@ -15,7 +15,7 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <strong><%= t('.sent_at') %></strong><%= l(@newsletter.sent_at, format: :newsletter) %>
+        <strong><%= t('.sent_at') %></strong><%= @newsletter.sent_at ? l(@newsletter.sent_at, format: :newsletter) : '' %>
       </div>
     </div>
     <div class="row">

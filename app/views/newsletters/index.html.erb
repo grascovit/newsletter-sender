@@ -26,7 +26,7 @@
             <td><%= newsletter.list.name %></td>
             <td><%= newsletter.sender.name %></td>
             <td><%= newsletter.template&.name %></td>
-            <td><%= l(newsletter.sent_at, format: :newsletter) %></td>
+            <td><%= newsletter.sent_at ? l(newsletter.sent_at, format: :newsletter) : '' %></td>
             <td class="actions">
               <%= link_to newsletter, class: 'btn btn-sm btn-primary' do %>
                 <i class="fas fa-info-circle"></i>
