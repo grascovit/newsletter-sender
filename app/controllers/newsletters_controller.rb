@@ -5,7 +5,10 @@ class NewslettersController < ApplicationController
   before_action :render_body, only: %i[show]
 
   def index
-    @newsletters = current_user.newsletters.order(sent_at: :desc)
+    @newsletters = current_user.newsletters
+                               .includes(:list, :sender, :template)
+                               .order(sent_at: :desc)
+                               .page(params[:page])
   end
 
   def new
