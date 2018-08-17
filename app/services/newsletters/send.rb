@@ -25,9 +25,8 @@ module Newsletters
           apikey: ENV['MAILER_API_KEY'],
           msgFrom: @newsletter.sender.email,
           msgFromName: @newsletter.sender.name,
-          msgTo: @newsletter.list.recipients.pluck(:email).join(','),
+          to: @newsletter.list.recipients.pluck(:email).join(','),
           subject: @newsletter.title,
-          bodyText: Nokogiri::HTML(@newsletter.body).text,
           bodyHtml: @newsletter.rendered_body
         }
       }
