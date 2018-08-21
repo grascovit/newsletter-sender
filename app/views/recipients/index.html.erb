@@ -3,10 +3,19 @@
     <h4 class="my-4 text-center">
       <%= t('.header') %>
     </h4>
-    <%= link_to new_recipient_path, class: 'float-right btn btn-sm btn-primary my-2' do %>
-      <%= t('.new_recipient') %>
-      <i class="fas fa-plus"></i>
-    <% end %>
+    <div class="row my-3">
+      <div class="col-6 col-lg-3">
+        <%= form_tag(recipients_path, method: :get) do %>
+          <%= text_field_tag :email, nil, placeholder: t('.search'), class: 'form-control' %>
+        <% end %>
+      </div>
+      <div class="col-6 col-lg-9">
+        <%= link_to new_recipient_path, class: 'float-right btn btn-sm btn-primary' do %>
+          <%= t('.new_recipient') %>
+          <i class="fas fa-plus"></i>
+        <% end %>
+      </div>
+    </div>
     <%= render 'shared/recipients/table', recipients: @recipients %>
   </div>
 </div>

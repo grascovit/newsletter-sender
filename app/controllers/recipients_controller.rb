@@ -4,10 +4,9 @@ class RecipientsController < ApplicationController
   before_action :fetch_recipient, only: %i[edit update destroy]
 
   def index
-    @recipients = current_user.recipients
-                              .includes(:list)
-                              .order(:name)
-                              .page(params[:page])
+    @recipients = RecipientsQuery.new(current_user.recipients)
+                                 .filter(filter_params)
+                                 .page(params[:page])
   end
 
   def new
@@ -52,5 +51,9 @@ class RecipientsController < ApplicationController
       :email,
       :list_id
     )
+  end
+
+  def filter_params
+    params.slice('email')
   end
 end

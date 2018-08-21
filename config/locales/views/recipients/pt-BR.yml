@@ -12,3 +12,4 @@ pt-BR:
     index:
       header: "Destinatários"
       new_recipient: "Novo destinatário"
+      search: "Pesquisar por email"

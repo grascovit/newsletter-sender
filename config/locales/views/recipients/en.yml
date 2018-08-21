@@ -12,3 +12,4 @@ en:
     index:
       header: "Senders"
       new_recipient: "New recipient"
+      search: "Search by email"
