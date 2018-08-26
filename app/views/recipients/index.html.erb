@@ -5,8 +5,17 @@
     </h4>
     <div class="row my-3">
       <div class="col-6 col-lg-3">
-        <%= form_tag(recipients_path, method: :get) do %>
-          <%= text_field_tag :email, nil, placeholder: t('.search'), class: 'form-control' %>
+        <%= form_tag(recipients_path, method: :get, class: 'input-group') do %>
+          <%= text_field_tag :email,
+                             params[:email],
+                             placeholder: t('.search'),
+                             class: 'form-control rounded-left border-right-0 border',
+                             type: 'search' %>
+          <span class="input-group-append">
+            <button class="btn btn-link border-left-0 border" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </span>
         <% end %>
       </div>
       <div class="col-6 col-lg-9">
