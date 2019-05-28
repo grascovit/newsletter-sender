@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/grascovit/newsletter-sender.svg?branch=master)](https://travis-ci.org/grascovit/newsletter-sender)
+[![Maintainability](https://api.codeclimate.com/v1/badges/0be2cc690b928bffefff/maintainability)](https://codeclimate.com/github/grascovit/newsletter-sender/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/0be2cc690b928bffefff/test_coverage)](https://codeclimate.com/github/grascovit/newsletter-sender/test_coverage)
 
 # Newsletter Sender
 
