@@ -3,45 +3,45 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.1'
+ruby '2.6.3'
 
-gem 'bootsnap', '~> 1.3.1', require: false
-gem 'bootstrap', '~> 4.1.3'
-gem 'devise', '~> 4.4.3'
+gem 'bootsnap', '~> 1.4.4', require: false
+gem 'bootstrap', '~> 4.3.1'
+gem 'devise', '~> 4.6.2'
 gem 'figaro', '~> 1.1.1'
-gem 'font-awesome-sass', '~> 5.2.0'
-gem 'httparty', '~> 0.16.2'
+gem 'font-awesome-sass', '~> 5.8.1'
+gem 'httparty', '~> 0.17.0'
 gem 'jquery-rails', '~> 4.3.3'
 gem 'kaminari', '~> 1.1.1'
-gem 'pg', '~> 1.0.0'
-gem 'puma', '~> 3.12.0'
-gem 'rails', '~> 5.2.1'
-gem 'rollbar', '~> 2.16.4'
+gem 'pg', '~> 1.1.4'
+gem 'puma', '~> 3.12.1'
+gem 'rails', '~> 5.2.3'
+gem 'rollbar', '~> 2.20.0'
 gem 'sass-rails', '~> 5.0.7'
-gem 'tinymce-rails', '~> 4.8.2'
-gem 'turbolinks', '~> 5.1.1'
-gem 'uglifier', '~> 4.1.18'
+gem 'tinymce-rails', '~> 5.0.5'
+gem 'turbolinks', '~> 5.2.0'
+gem 'uglifier', '~> 4.1.20'
 
 group :development, :test do
-  gem 'byebug', '~> 10.0.2', platforms: %i[mri mingw x64_mingw]
-  gem 'factory_bot_rails', '~> 4.10.0'
-  gem 'rspec-rails', '~> 3.8.0'
-  gem 'rubocop', '~> 0.58.2', require: false
-  gem 'rubocop-rspec', '~> 1.27.0'
+  gem 'byebug', '~> 11.0.1', platforms: %i[mri mingw x64_mingw]
+  gem 'factory_bot_rails', '~> 5.0.2'
+  gem 'rspec-rails', '~> 3.8.2'
+  gem 'rubocop', '~> 0.70.0', require: false
+  gem 'rubocop-rspec', '~> 1.33.0'
 end
 
 group :development do
-  gem 'letter_opener', '~> 1.6.0'
+  gem 'letter_opener', '~> 1.7.0'
   gem 'listen', '~> 3.1.5'
   gem 'spring', '~> 2.0.2'
   gem 'spring-watcher-listen', '~> 2.0.1'
 end
 
 group :test do
-  gem 'faker', '~> 1.9.1'
-  gem 'shoulda-matchers', '~> 3.1.2'
+  gem 'faker', '~> 1.9.3'
+  gem 'shoulda-matchers', '~> 4.0.1'
   gem 'simplecov', '~> 0.16.1', require: false
-  gem 'webmock', '~> 3.4.2'
+  gem 'webmock', '~> 3.5.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
