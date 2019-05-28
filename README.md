@@ -2,7 +2,12 @@
 
 # Newsletter Sender
 
-Application created using Rails 5.2.1 and Ruby 2.5.1.
+Web application that eases the sending of press release emails using ElasticEmail API and a simple UI.
+
+#### Requirements
+- Ruby 2.6.3
+- Rails 5.2.3
+- PostgreSQL 9.5+
 
 #### Setup
 To get the application running, follow the steps below:
@@ -10,7 +15,7 @@ To get the application running, follow the steps below:
 bundle install
 ```
 
-Run `bundle exec figaro install`, copy the content from `config/application.yml.example` file to `config/application.yml` and fill the required data.
+Create a `config/application.yml` file, copy the content from `config/application.yml.example` file to it and fill the values.
 
 After this, execute the following steps:
 ```shell
