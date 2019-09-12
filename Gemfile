@@ -7,7 +7,7 @@ ruby '2.6.3'
 
 gem 'bootsnap', '~> 1.4.4', require: false
 gem 'bootstrap', '~> 4.3.1'
-gem 'devise', '~> 4.6.2'
+gem 'devise', '~> 4.7.1'
 gem 'figaro', '~> 1.1.1'
 gem 'font-awesome-sass', '~> 5.8.1'
 gem 'httparty', '~> 0.17.0'
