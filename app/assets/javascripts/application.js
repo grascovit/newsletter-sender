@@ -1,12 +1,11 @@
 //= require rails-ujs
-//= require turbolinks
 //= require jquery3
 //= require popper
 //= require bootstrap
 //= require tinymce
 //= require_tree .
 
-$(document).on('turbolinks:load', function() {
+$(document).ready(function () {
   tinymce.remove();
   tinymce.init({
     selector: '.tinymce',
