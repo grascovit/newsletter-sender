@@ -9,6 +9,7 @@ RSpec.describe RecipientList, type: :model do
         .with_foreign_key('list_id')
         .dependent(:destroy)
     end
+
     it { is_expected.to belong_to(:user) }
   end
 

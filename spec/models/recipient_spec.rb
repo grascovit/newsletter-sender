@@ -9,6 +9,7 @@ RSpec.describe Recipient, type: :model do
 
   describe 'validations' do
     it { is_expected.to validate_presence_of(:email) }
+
     it do
       expect(subject).to validate_uniqueness_of(:email)
         .scoped_to(:list_id)

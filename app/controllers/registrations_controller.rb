@@ -6,6 +6,8 @@ class RegistrationsController < Devise::RegistrationsController
   private
 
   def disable_registration
-    redirect_to unauthenticated_root_path unless ENV['ENABLE_REGISTRATION'] == 'true'
+    unless ENV['ENABLE_REGISTRATION'] == 'true'
+      redirect_to unauthenticated_root_path
+    end
   end
 end
