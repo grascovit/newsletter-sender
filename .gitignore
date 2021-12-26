@@ -33,3 +33,5 @@ coverage/
 
 # Ignore shared folder
 shared/
+
+.env

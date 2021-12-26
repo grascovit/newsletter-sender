@@ -8,7 +8,7 @@ ruby '2.6.3'
 gem 'bootsnap', '~> 1.4.5', require: false
 gem 'bootstrap', '~> 4.4.1'
 gem 'devise', '~> 4.7.1'
-gem 'figaro', '~> 1.1.1'
+gem 'dotenv-rails', '~> 2.7.6'
 gem 'font-awesome-sass', '~> 5.12.0'
 gem 'httparty', '~> 0.17.3'
 gem 'jquery-rails', '~> 4.3.5'

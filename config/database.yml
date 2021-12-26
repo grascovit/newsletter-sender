@@ -16,4 +16,4 @@ production:
   <<: *default
   database: newsletter-sender_production
   username: newsletter-sender
-  password: <%= ENV['NEWSLETTER-SENDER_DATABASE_PASSWORD'] %>
+  password: <%= ENV['NEWSLETTER_SENDER_DATABASE_PASSWORD'] %>
