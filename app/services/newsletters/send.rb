@@ -23,7 +23,7 @@ module Newsletters
       {
         body: {
           apikey: ENV['MAILER_API_KEY'],
-          msgFrom: @newsletter.sender.email,
+          msgFrom: ENV['SENDER_EMAIL'],
           msgFromName: @newsletter.sender.name,
           to: @newsletter.list.recipients.pluck(:email).join(','),
           subject: @newsletter.title,
