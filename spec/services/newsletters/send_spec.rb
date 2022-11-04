@@ -12,9 +12,12 @@ module Newsletters
       end
 
       before do
-        stub_const('ENV',
-                   'MAILER_API_KEY' => 'secret',
-                   'MAILER_API_URL' => 'https://api.elasticemail.com/v2')
+        stub_const(
+          'ENV',
+          'MAILER_API_KEY' => 'secret',
+          'MAILER_API_URL' => 'https://api.elasticemail.com/v2',
+          'EMAIL_SENDER' => 'contato@informativoconsumidor.com.br'
+        )
 
         stub_request(:post, "#{ENV['MAILER_API_URL']}/email/send")
           .with(options)
@@ -64,7 +67,7 @@ module Newsletters
       {
         body: {
           apikey: ENV['MAILER_API_KEY'],
-          msgFrom: newsletter.sender.email,
+          msgFrom: ENV['EMAIL_SENDER'],
           msgFromName: newsletter.sender.name,
           to: newsletter.list.recipients.pluck(:email).join(','),
           subject: newsletter.title,
